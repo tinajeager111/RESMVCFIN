@@ -1,13 +1,13 @@
 require("dotenv").config();
 
-const express = require("express"),
-  mongoose = require("mongoose"),
-  app = express(),
-  tokenBD = process.env.token,
-  path = require("path"),
-  foodRouter = require("./controllers/comidas"),
-  mesaRouter = require("./controllers/mesas"),
-  userRouter = require("./controllers/usuarios");
+const express = require("express")
+  const mongoose = require("mongoose")
+const app = express()
+  const tokenBD = process.env.token
+  const path = require("path")
+ const foodRouter = require("./controllers/comidas")
+ const mesaRouter = require("./controllers/mesas")
+ const userRouter = require("./controllers/usuarios");
 
 async function conectarDB() {
   try {
