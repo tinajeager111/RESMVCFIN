@@ -5,6 +5,6 @@ const express = require("express"),
   http = require("http"),
   server = http.createServer(app);
 
-server.listen(6000, () => {
+server.listen(4000, () => {
   console.log("el servidor esta activo");
 });
